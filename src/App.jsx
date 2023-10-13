@@ -4,12 +4,16 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  function tambah(){
-    setCount(count + 1)
+  const tambah = () => {
+    if (count < 15) {
+      setCount(count + 1)
+    }
   }
 
-  function kurang(){
-    setCount(count - 1)
+  const kurang = () => {
+    if (count > 0) {
+      setCount(count - 1)
+    }
   }
 
   function reset(){
@@ -24,11 +28,11 @@ function App() {
           <button className='btn btn-success' onClick={kurang}>
             Kurang
           </button>
-          <button className='btn btn-primary' onClick={tambah}>
-            Tambah
-          </button>
           <button className='btn btn-danger' onClick={reset}>
             Reset
+          </button>
+          <button className='btn btn-primary' onClick={tambah}>
+            Tambah
           </button>
         </div>
       </div>
