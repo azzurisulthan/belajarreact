@@ -3,6 +3,30 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function header(){
+  return(
+    <header>
+      <h1>Ini adalah header</h1>
+    </header>
+  );
+}
+
+function Main(){
+  return(
+    <header>
+      <h1>Ini adalah Main (content utama)</h1>
+    </header>
+  );
+}
+
+function footer(){
+  return(
+    <header>
+      <h1>Ini adalah footer</h1>
+    </header>
+  );
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -33,3 +57,4 @@ function App() {
 }
 
 export default App
+
